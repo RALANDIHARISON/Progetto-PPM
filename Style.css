@@ -448,12 +448,19 @@ body {
 
     .mini-articles {
         flex-direction: column;
+        with: 100%
+        overflow-x: hidden;
+        box-sizing: border-box;
+        padding: 0   10px;
     }
 
     .mini.with-img,
     .mini.with-img.reverse {
         flex-direction: column;
+        width: 100%
+        box-sizing: border-box;
         text-align: left;
+        
     }
 
     .mini.with-img::after,
