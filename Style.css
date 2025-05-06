@@ -425,7 +425,8 @@ body {
     font-size: 14px;
     color: #666;
 }
-@media (max-width: 786px) {
+
+@media (max-width: 1024px) {
     .container {
         flex-direction: column;
         align-items: stretch;
@@ -448,19 +449,18 @@ body {
 
     .mini-articles {
         flex-direction: column;
-        with: 100%
+        width: 100%;
         overflow-x: hidden;
         box-sizing: border-box;
-        padding: 0   10px;
+        padding: 0 10px;
     }
 
     .mini.with-img,
     .mini.with-img.reverse {
         flex-direction: column;
-        width: 100%
+        width: 100%;
         box-sizing: border-box;
         text-align: left;
-        
     }
 
     .mini.with-img::after,
@@ -474,6 +474,29 @@ body {
         height: auto;
     }
 }
+
+@media (max-width: 480px) {
+    .featured-article h1 {
+        font-size: 20px;
+    }
+
+    .featured-article p {
+        font-size: 14px;
+    }
+
+    .mini h4 {
+        font-size: 14px;
+    }
+
+    .mini p {
+        font-size: 13px;
+    }
+
+    .label {
+        font-size: 10px;
+    }
+}
+
 
 .space {
     height: 5px;
